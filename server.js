@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Set headers for Godot web exports (COOP/COEP)
 app.use((req, res, next) => {
